@@ -1,0 +1,146 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+   --white-color:hsl(0, 0%, 98%);
+   --gray:hsl(0, 0%, 41%);
+   --black:hsl(0, 0%, 8%);
+   --main-padding:15px;
+}
+body {
+   font-family: 'Epilogue', sans-serif;
+   /* font-size: 18px; */
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 14px;
+}
+button {
+    color: var(--gray);
+    outline: none;
+    border:none;
+    background-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    width: 100px;
+}
+button:hover {
+    border-color: var(--black);
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000085;
+    z-index: 4;
+    display: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 70px;
+    position: relative;
+}
+.header .logo {
+   margin:  20px 0px 0px var(--main-padding);
+}
+.links-content  {
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 3;
+    padding: 10px 20px;
+    width:215px;
+    min-height: 100vh;
+    background-color: var(--white-color);
+    transition: .3s;
+    opacity: 0;
+}
+.close {
+    text-align: right;
+    margin-bottom: 20px;
+}
+.main-menu {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.main-menu > img {
+    margin-left: 10px ;
+}
+.main-menu:hover > img ,
+.main-menu:hover > a 
+{
+    color: var(--black);
+}
+.sub-menu-links {
+    transition: display .3s;
+}
+.sub-menu-links .link {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.butns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu {
+    cursor: pointer;
+    margin:  20px 15px 0px var(--main-padding);
+    text-align: center;
+}
+
+/* Start Content Section */
+.content img {
+    max-width: 100%;
+}
+.content .content-data {
+    text-align: center;
+}
+.content h1 {
+    padding-inline: var(--main-padding);
+    font-size: 30px;
+    margin: 25px 0;
+}
+.content p {
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 500;
+    padding-inline: var(--main-padding);
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.content > div > button {
+    background-color: var(--black);
+    color: var(--white-color);
+    width: 110px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+/* Start footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: var(--main-padding);
+    height: 45px;
+}
+.footer-container > img {
+    width: 75px;
+    cursor: pointer;
+}
+.footer-container > img:nth-child(2) {
+    width: 50px;
+}

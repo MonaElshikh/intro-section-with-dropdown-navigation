@@ -94,7 +94,7 @@ button:hover {
 .main-menu .sub > img {
     margin-left: 10px ;
 }
-.sub:hover > img ,
+.main-menu:hover > a ,
 .sub:hover > a 
 {
     color: var(--black);

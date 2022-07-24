@@ -23,8 +23,8 @@ function toggleSubMenus() {
             subMenu.classList.toggle("expand");
             let arrow = menu.childNodes[3];
             subMenu.classList.contains("expand")
-                ? arrow.src = "/images/icon-arrow-down.svg"
-                : arrow.src = "/images/icon-arrow-up.svg";
+                ? arrow.src = "images/icon-arrow-down.svg"
+                : arrow.src = "images/icon-arrow-up.svg";
         });
     })
 }

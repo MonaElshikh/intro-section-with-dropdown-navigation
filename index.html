@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link
+      rel="preload"
+      href="css/media.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
@@ -23,7 +29,7 @@
   </head>
   <body>
     <div class="overlay"></div>
-    <div class="intro-section">
+    <div class="intro-section" role="main">
       <div class="header">
         <img src="/images/logo.svg" class="logo" alt="logo" />
         <div class="links">
@@ -70,7 +76,9 @@
               <li class="main-menu">
                 <a href="#" class="sub-menu">Careers</a>
               </li>
-              <li class="main-menu"><a href="#" class="sub-menu">About</a></li>
+              <li class="main-menu">
+                <a href="#" class="sub-menu">About</a>
+              </li>
             </ul>
             <div class="butns">
               <button>Login</button><button>Register</button>
@@ -82,7 +90,10 @@
         </div>
       </div>
       <div class="content">
-        <img src="/images/image-hero-mobile.png" alt="hero-mobile" />
+        <div class="content-img">
+          <img src="/images/image-hero-mobile.png" alt="hero-mobile" />
+          <img src="/images/image-hero-desktop.png" alt="ero-desktop" />
+        </div>
         <div class="content-data">
           <h1>Make Remote Work</h1>
           <p>

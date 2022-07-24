@@ -1,3 +1,4 @@
+/****************************** Start Global ******************************/
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -8,10 +9,11 @@
    --gray:hsl(0, 0%, 41%);
    --black:hsl(0, 0%, 8%);
    --main-padding:15px;
+   --destop-hero-img:"/images/image-hero-desktop.png"
 }
 body {
    font-family: 'Epilogue', sans-serif;
-   /* font-size: 18px; */
+   background-color: var(--white-color);
 }
 ul {
     list-style: none;
@@ -46,11 +48,13 @@ button:hover {
     z-index: 4;
     display: none;
 }
+/****************************** End Global ******************************/
+/****************************** Start Header ****************************/
 .header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height: 70px;
+    height: 80px;
     position: relative;
 }
 .header .logo {
@@ -86,6 +90,7 @@ button:hover {
 }
 .sub-menu-links {
     transition: display .3s;
+    display: none;
 }
 .sub-menu-links .link {
     margin-bottom: 10px;
@@ -99,12 +104,15 @@ button:hover {
 .menu {
     cursor: pointer;
     margin:  20px 15px 0px var(--main-padding);
-    text-align: center;
+    text-align: right;
 }
-
-/* Start Content Section */
-.content img {
+/***************************** End Header    *****************************/
+/***************************** Start Content *****************************/
+.content .content-img >img:first-child {
     max-width: 100%;
+}
+.content .content-img >img:last-child {
+   display: none;
 }
 .content .content-data {
     text-align: center;
@@ -129,7 +137,8 @@ button:hover {
     border-radius: 20px;
     margin-bottom: 25px;
 }
-/* Start footer */
+/********************** End Content *************************/
+/*********************** Start footer ***********************/
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -144,3 +153,7 @@ button:hover {
 .footer-container > img:nth-child(2) {
     width: 50px;
 }
+/*********************** End footer **********************/
+
+
+
